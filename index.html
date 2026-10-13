@@ -1,7 +1,245 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>StackLog</title></head>
-<body style="font-family:-apple-system,sans-serif;max-width:720px;margin:40px auto;padding:0 20px">
-  <h1>StackLog</h1>
-  <p><a href="./privacy.html">Privacy Policy</a></p>
-  <p><a href="./support.html">Support</a></p>
-</body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>StackLog Daily – Private Supplement &amp; Vitamin Tracker for iPhone</title>
+<meta name="description" content="StackLog Daily is a private supplement and vitamin tracker for iPhone. No account, no cloud — your log stays on your phone. Free on the App Store.">
+<link rel="canonical" href="https://ryanfritz83-ops.github.io/stacklog-legal/">
+<meta name="theme-color" content="#0C3622">
+<meta name="apple-itunes-app" content="app-id=6811979439">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="StackLog Daily">
+<meta property="og:title" content="StackLog Daily – Private Supplement &amp; Vitamin Tracker">
+<meta property="og:description" content="Track your daily supplement stack with one tap. No account, no cloud — your data stays on your iPhone.">
+<meta property="og:url" content="https://ryanfritz83-ops.github.io/stacklog-legal/">
+<meta property="og:image" content="https://ryanfritz83-ops.github.io/stacklog-legal/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="StackLog Daily app on iPhone showing today's supplements with Taken and Skip buttons">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="StackLog Daily – Private Supplement &amp; Vitamin Tracker">
+<meta name="twitter:description" content="Track your daily supplement stack with one tap. No account, no cloud — your data stays on your iPhone.">
+<meta name="twitter:image" content="https://ryanfritz83-ops.github.io/stacklog-legal/img/og-image.png">
+<meta name="twitter:image:alt" content="StackLog Daily app on iPhone showing today's supplements with Taken and Skip buttons">
+
+<style>
+:root{--dark:#0C3622;--mid:#2F6F4E;--light:#6FC08A;--cream:#F4EFE6;--ink:#142018;--muted:#5b6b61;--card:#fffdf9;--r:22px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--mid)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{line-height:1.15;letter-spacing:-.02em;margin:0 0 .5em}
+h2{font-size:clamp(1.7rem,3.4vw,2.4rem)}
+.eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);margin:0 0 .6rem}
+/* hero */
+.hero{background:radial-gradient(1200px 600px at 85% 10%,#1d5a3c 0%,var(--dark) 60%);color:var(--cream);padding:28px 0 0;overflow:hidden}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--cream);text-decoration:none;font-weight:700}
+.brand img{width:36px;height:36px;border-radius:9px}
+.nav a.small{color:#cfe3d5;font-size:.9rem;text-decoration:none}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:56px 0 0}
+.app-icon{width:96px;height:96px;border-radius:22px;box-shadow:0 12px 30px rgba(0,0,0,.35);margin-bottom:22px}
+.hero h1{font-size:clamp(2.3rem,5.4vw,3.9rem);font-weight:800}
+.hero h1 span{color:var(--light)}
+.sub{font-size:clamp(1.05rem,1.8vw,1.25rem);color:#d6e2d8;max-width:34em;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 20px}
+.badge img{height:54px;width:auto}
+.cta small{color:#b9cfc0;font-size:.9rem}
+.hero-shot{align-self:end;justify-self:center;max-width:340px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.4))}
+.hero-shot img{border-radius:28px 28px 0 0}
+/* sections */
+section{padding:84px 0}
+.lead{color:var(--muted);font-size:1.1rem;max-width:40em;margin:0 0 36px}
+.shots{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 18px;-webkit-overflow-scrolling:touch}
+.shots figure{margin:0;flex:1 1 0;min-width:0;scroll-snap-align:start}
+.shots img{border-radius:20px;box-shadow:0 10px 26px rgba(12,54,34,.18)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.f{background:var(--card);border:1px solid #e4ddd0;border-radius:var(--r);padding:22px}
+.f h3{font-size:1.08rem;margin-bottom:.35em}
+.f p{margin:0;color:var(--muted);font-size:.97rem}
+.dot{width:34px;height:34px;border-radius:10px;background:var(--dark);color:var(--light);display:grid;place-items:center;font-weight:800;margin-bottom:14px;font-size:.95rem}
+/* pricing */
+.pricing{background:#ebe4d6}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:880px}
+.plan{background:var(--card);border-radius:var(--r);padding:28px;border:1px solid #e0d8c8}
+.plan.pro{background:var(--dark);color:var(--cream);border-color:var(--dark)}
+.plan h3{font-size:1.35rem}
+.price{font-size:1.9rem;font-weight:800;margin:.1em 0 .2em}
+.price small{font-size:1rem;font-weight:600;opacity:.8}
+.plan ul{padding-left:1.1em;margin:14px 0 0}
+.plan li{margin:.35em 0}
+.plan.pro .note{color:#b9cfc0}
+.note{font-size:.9rem;color:var(--muted);margin:.4em 0 0}
+.soon{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--light);color:var(--dark);border-radius:999px;padding:2px 9px;margin-left:6px;vertical-align:2px}
+/* privacy */
+.privacy{background:var(--dark);color:var(--cream)}
+.privacy .eyebrow{color:var(--light)}
+.privacy .lead{color:#cfe0d4}
+.plist{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 28px;padding:0;margin:0;list-style:none;max-width:880px}
+.plist li{padding-left:30px;position:relative}
+.plist li::before{content:"";position:absolute;left:0;top:.35em;width:16px;height:16px;border-radius:50%;background:var(--light)}
+.disclaimer{max-width:880px;margin-top:34px;font-size:.92rem;color:#b9cfc0;border-top:1px solid rgba(244,239,230,.15);padding-top:20px}
+.final{text-align:center}
+.final .cta{justify-content:center}
+.final .lead{margin-left:auto;margin-right:auto}
+footer{padding:34px 0 46px;font-size:.92rem;color:var(--muted);border-top:1px solid #e0d8c8}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer nav a{margin-right:18px}
+@media (max-width:860px){
+  .shots figure{flex:0 0 200px}
+  .hero-grid{grid-template-columns:1fr;padding-top:36px;gap:28px;text-align:left}
+  .hero-shot{max-width:280px}
+  .features{grid-template-columns:1fr 1fr}
+  .plans{grid-template-columns:1fr}
+  .plist{grid-template-columns:1fr}
+  section{padding:64px 0}
+}
+@media (max-width:560px){
+  .features{grid-template-columns:1fr}
+  .shots figure{flex-basis:70%}
+  .nav a.small{display:none}
+}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="./"><img src="img/apple-touch-icon.png" alt="" width="36" height="36">StackLog Daily</a>
+      <a class="small" href="https://ryanfritz83-ops.github.io/stacklog-legal/support.html">Support</a>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <img class="app-icon" src="img/icon-512.png" alt="StackLog Daily app icon" width="96" height="96">
+        <h1>Your supplement stack, <span>tracked privately.</span></h1>
+        <p class="sub">A simple daily supplement &amp; vitamin tracker for iPhone. Tap Taken or Skip, see your consistency, and know when to restock — with no account and no cloud. Your log stays on your phone.</p>
+        <div class="cta">
+          <a class="badge" href="https://apps.apple.com/app/stacklog-daily/id6811979439"><img src="img/app-store-badge-black.svg" alt="Download on the App Store" width="162" height="54"></a>
+          <small>Free download · iPhone (works on iPad)</small>
+        </div>
+      </div>
+      <picture class="hero-shot">
+        <source srcset="img/01-today.webp" type="image/webp">
+        <img src="img/01-today.jpg" alt="Today screen: Vitamin D3 and Magnesium with Taken and Skip buttons" width="560" height="1214">
+      </picture>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="screens">
+  <div class="wrap">
+    <p class="eyebrow">A look inside</p>
+    <h2>Built to take a few seconds a day.</h2>
+    <p class="lead">Open it, tap what you took, close it. Consistency, supply estimates and reminders take care of themselves.</p>
+    <div class="shots" role="list">
+      <figure role="listitem"><picture><source srcset="img/01-today.webp" type="image/webp"><img loading="lazy" src="img/01-today.jpg" alt="Today list with one-tap Taken and Skip" width="560" height="1214"></picture></figure>
+      <figure role="listitem"><picture><source srcset="img/02-grid.webp" type="image/webp"><img loading="lazy" src="img/02-grid.jpg" alt="12-week consistency grid" width="560" height="1214"></picture></figure>
+      <figure role="listitem"><picture><source srcset="img/03-supply.webp" type="image/webp"><img loading="lazy" src="img/03-supply.jpg" alt="Supply screen with days-left estimates" width="560" height="1214"></picture></figure>
+      <figure role="listitem"><picture><source srcset="img/04-daily-log.webp" type="image/webp"><img loading="lazy" src="img/04-daily-log.jpg" alt="Daily log with dose, timing and days" width="560" height="1214"></picture></figure>
+      <figure role="listitem"><picture><source srcset="img/05-settings.webp" type="image/webp"><img loading="lazy" src="img/05-settings.jpg" alt="Settings with reminders and backup and restore" width="560" height="1214"></picture></figure>
+    </div>
+  </div>
+</section>
+
+<section id="features" style="padding-top:20px">
+  <div class="wrap">
+    <p class="eyebrow">Features</p>
+    <h2>Everything a daily stack needs. Nothing it doesn’t.</h2>
+    <div class="features">
+      <div class="f"><div class="dot">1</div><h3>Today, grouped by timing</h3><p>Your list is split into AM, with meals and PM, with one-tap Taken or Skip for every dose.</p></div>
+      <div class="f"><div class="dot">2</div><h3>Your custom daily log</h3><p>Set the dose, timing and days of the week for each supplement or vitamin.</p></div>
+      <div class="f"><div class="dot">3</div><h3>12-week consistency grid</h3><p>See at a glance how consistently you’ve stuck to your scheduled stack.</p></div>
+      <div class="f"><div class="dot">4</div><h3>Supply &amp; cost estimates</h3><p>Days-left estimates for each bottle, plus an estimated monthly cost for your stack.</p></div>
+      <div class="f"><div class="dot">5</div><h3>Local reminders</h3><p>Optional dose and refill reminders — mark a dose Taken right from the notification banner.</p></div>
+      <div class="f"><div class="dot">6</div><h3>Backup &amp; clinician summary</h3><p>Export a backup JSON file, or a summary you can share with your clinician.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="pricing">
+  <div class="wrap">
+    <p class="eyebrow">Pricing</p>
+    <h2>Free to use. Pro if you want more.</h2>
+    <p class="lead">StackLog Daily is a free download. StackLog Pro is an optional subscription with a 1-week free trial.</p>
+    <div class="plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <div class="price">$0</div>
+        <ul>
+          <li>Up to 5 active supplements</li>
+          <li>Today list with one-tap Taken / Skip</li>
+          <li>12-week consistency grid</li>
+          <li>Supply and monthly cost estimates</li>
+          <li>Local dose &amp; refill reminders</li>
+          <li>Backup JSON &amp; clinician summary export</li>
+        </ul>
+      </div>
+      <div class="plan pro">
+        <h3>StackLog Pro</h3>
+        <div class="price">$2.99 <small>/ month</small></div>
+        <p class="note">or $19.99 / year · 1-week free trial</p>
+        <ul>
+          <li>Unlimited supplements</li>
+          <li>Home-screen widget</li>
+          <li>Snooze on reminders</li>
+          <li>Restore from backup</li>
+          <li>Apple Health sync <span class="soon">Coming soon</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="note" style="margin-top:18px">Subscriptions are managed through your Apple ID. Prices shown in USD.</p>
+  </div>
+</section>
+
+<section id="privacy" class="privacy">
+  <div class="wrap">
+    <p class="eyebrow">Privacy</p>
+    <h2>Your stack is nobody’s business but yours.</h2>
+    <p class="lead">StackLog Daily is local-only. There’s nothing to sign up for and nowhere for your data to go.</p>
+    <ul class="plist">
+      <li>No account to create — open the app and start logging.</li>
+      <li>No cloud sync. Your log is stored on your iPhone.</li>
+      <li>Reminders are local notifications scheduled on your device.</li>
+      <li>You choose when to export a backup or a clinician summary.</li>
+      <li>No analytics, advertising SDKs or crash reporters in the app.</li>
+      <li>No tracking across apps or websites. This page has no cookies or trackers either.</li>
+    </ul>
+    <p class="disclaimer">StackLog Daily is a tracker. It isn’t medical advice and isn’t intended to diagnose, treat, cure or prevent any condition. Talk to a clinician before changing your supplements. Read the full <a href="https://ryanfritz83-ops.github.io/stacklog-legal/privacy.html" style="color:var(--light)">privacy policy</a>.</p>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <img src="img/icon-256.webp" alt="" width="88" height="88" style="margin:0 auto 18px;border-radius:20px">
+    <h2>Start tracking your stack today.</h2>
+    <p class="lead">Free on the App Store for iPhone. Made by an indie developer who wanted this for his own stack.</p>
+    <div class="cta">
+      <a class="badge" href="https://apps.apple.com/app/stacklog-daily/id6811979439"><img src="img/app-store-badge-black.svg" alt="Download on the App Store" width="162" height="54"></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav>
+      <a href="https://ryanfritz83-ops.github.io/stacklog-legal/privacy.html">Privacy Policy</a>
+      <a href="https://ryanfritz83-ops.github.io/stacklog-legal/support.html">Support</a>
+      <a href="https://apps.apple.com/app/stacklog-daily/id6811979439">App Store</a>
+    </nav>
+    <div>© 2026 Ryan Fritz</div>
+  </div>
+  <div class="wrap" style="margin-top:14px;font-size:.78rem">Apple, the Apple logo, iPhone and iPad are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</div>
+</footer>
+</body>
+</html>
